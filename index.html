@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html lang="en" class="no-js" qva-bootstrap="false">
+
+<!-- BEGIN HEAD -->
+
+<head>
+	<meta charset="utf-8" />
+	<title> </title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+
+	<!-- BEGIN GLOBAL MANDATORY STYLES -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=all" rel="stylesheet"
+		type="text/css" />
+	<link href="styles/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+	<link href="styles/simple-line-icons/simple-line-icons.css" rel="stylesheet" type="text/css" />
+
+	<link href="styles/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+	<link href="styles/uniform/css/uniform.default.css" rel="stylesheet" type="text/css" />
+
+	<link href="styles/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+	
+	<link href="styles/tasks.css" rel="stylesheet" type="text/css" />
+	<link href="styles/csss/components-md.css" id="style_components" rel="stylesheet" type="text/css" />
+	<link href="styles/csss/plugins-md.css" rel="stylesheet" type="text/css" /><link href="styles/css/layout.css" rel="stylesheet" type="text/css" />
+	<link href="styles/css/themes/darkblue.css" rel="stylesheet" type="text/css" id="style_color" />
+	<link href="styles/css/custom.css" rel="stylesheet" type="text/css" />
+	
+	<link rel="stylesheet" href="styles/qlik-styles.css">
+	<link rel="stylesheet" href="styles/csss/client.css" media="all">
+	<link rel="shortcut icon" href="favicon.ico" />
+
+
+	<style type="text/css">
+		.qvmainchart,
+		.scroller {
+			height: 300px;
+			width: 100%;
+		}
+
+		.qvmainchartextracontent {
+			height: 250px;
+			width: 100%;
+		}
+
+		.hundredpercent {
+			height: 95%;
+		}
+
+		.clear-all {
+			text-align: center;
+			margin-bottom: 1em;
+			font-weight: bold;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+
+<body class="page-md page-header-fixed page-quick-sidebar-over-content page-sidebar-closed-hide-logo ">
+	<!-- BEGIN HEADER -->
+	<div class="page-header md-shadow-z-1-i navbar navbar-fixed-top">
+		<!-- BEGIN HEADER INNER -->
+		<div class="page-header-inner">
+			<!-- BEGIN LOGO -->
+			<div class="page-logo">
+				<a href="#dashboard">
+					<img src="styles/img/logo.png" alt="logo" class="logo-default" />
+				</a>
+				<div class="menu-toggler sidebar-toggler">
+				</div>
+			</div>
+			<!-- END LOGO -->
+
+			<!-- BEGIN TOP NAVIGATION MENU -->
+			<div class="top-menu">
+				<ul class="nav navbar-nav pull-right">
+					<!-- BEGIN NOTIFICATION DROPDOWN -->
+
+					<!-- BEGIN CLEAR SELECTIONS -->
+
+					<li class="dropdown dropdown-user">
+						<a href=" " class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
+							data-close-others="true">
+							<span class="username username-hide-on-mobile">Current</span>&nbsp;<span class="username">
+								Selections</span>
+							<span id="selectionsnotification" class="badge badge-default">
+							</span>
+							<i class="fa fa-angle-down"></i>
+						</a>
+						<ul id="selections" class="dropdown-menu dropdown-menu-default">
+							<!-- load selections -->
+						</ul>
+					</li>
+
+					<!-- END CLEAR SELECTIONS -->
+
+					<!-- BEGIN QUICK SIDEBAR TOGGLER -->
+
+					<li class="dropdown dropdown-user dropdown-quick-sidebar-toggler">
+						<a href=" " class="dropdown-toggle">
+							<span class="username">Filters</span>
+							<i class="simpleicon icon-logout"></i>
+						</a>
+					</li>
+					<!-- END QUICK SIDEBAR TOGGLER -->
+				</ul>
+			</div>
+			<!-- END TOP NAVIGATION MENU -->
+		</div>
+		<!-- END HEADER INNER -->
+	</div>
+	<!-- END HEADER -->
+
+
+
+	<div class="clearfix">
+	</div>
+	<!-- BEGIN CONTAINER -->
+	<div id="scroll-container" style="overflow:auto;">
+		<div class="page-container">
+
+
+
+			<!-- BEGIN SIDEBAR -->
+			<div class="page-sidebar-wrapper">
+				<div class="page-sidebar navbar-collapse collapse">
+					<!-- BEGIN SIDEBAR MENU -->
+
+					<ul class="page-sidebar-menu page-sidebar-menu-light" data-keep-expanded="false"
+						data-auto-scroll="true" data-slide-speed="200">
+
+						<!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
+						<li class="start active open">
+							<a href="#dashboard">
+								<i class="simpleicon icon-home"></i>
+								<span class="title">Dashboard</span>
+								<span class="selected"></span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="simpleicon icon-heart"></i>
+								<span class="title">Awareness</span>
+								<span class="selected"></span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="simpleicon icon-basket"></i>
+								<span class="title">Pipeline</span>
+							</a>
+						</li>
+						<li>
+							<a href=" ">
+								<i class="simpleicon icon-briefcase"></i>
+								<span class="title">Engagement</span>
+							</a>
+						</li>
+						<li>
+							<a href=" ">
+								<i class="simpleicon icon-briefcase"></i>
+								<span class="title">Contacts</span>
+							</a>
+						</li>
+					</ul>
+					<!-- END SIDEBAR MENU -->
+				</div>
+			</div>
+			<!-- END SIDEBAR -->
+
+
+
+			<!-- BEGIN CONTENT -->
+			<div class="page-content-wrapper">
+				<!-- ngView: -->
+				<div ng-view="" class="ng-scope">
+					<div class="page-content ng-scope" style="min-height:459px">
+
+						<!-- BEGIN PAGE HEADER-->
+						<span class="pull-right">
+							<a data-toggle="modal" href="#basic" class="help">
+								<i class="fa fa-question-circle"></i> <span class="helptext">Help</span>
+							</a>
+						</span>
+						<h3 class="page-title">
+							Dashboard <small>reports &amp; statistics</small>
+						</h3>
+						<div class="page-bar">
+							<ul class="page-breadcrumb">
+								<li>
+									<i class="fa fa-home"></i>
+									<a href=" ">Dashboard</a>
+								</li>
+							</ul>
+							<div class="page-toolbar">
+								<div class="btn-group btn-group-devided datepicker">
+
+									<a href="" class="datepicker-btn dropdown-toggle" data-toggle="dropdown"
+										data-hover="dropdown" data-close-others="true">
+										<i class="fa fa-calendar"></i> Date Picker<span class="fa fa-angle-down">
+										</span>
+									</a>
+									<ul class="dropdown-menu pull-right">
+										<li>
+											<a href=" " ng-click="updateCalendar('Year')">
+												This Year
+											</a>
+										</li>
+										<li>
+											<a href=" " ng-click="updateCalendar('Quarter')">
+												This Quarter
+											</a>
+										</li>
+										<li>
+											<a href=" " ng-click="updateCalendar('Month')">
+												This Month
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- END PAGE HEADER-->
+						<!-- BEGIN DASHBOARD STATS -->
+						<div class="row four">
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+								<div class="dashboard-stat red-haze">
+									<div class="visual">
+										<i class="fa fa-eye"></i>
+									</div>
+									<div class="details">
+
+										<div class="desc uppercase ng-binding">
+											Total Visits This Quarter
+										</div>
+
+										<div id="QVN01" class="number qvobject kpiData">2,151,822</div>
+										<div class="number qvobject kpiData subkpi">
+											LY <span id="QVN012" class="number qvobject kpiData subkpi">1,866,892</span>
+											(<span id="QVN011" class="number qvobject kpiData subkpi">▲ 15.3%</span>)
+										</div>
+
+									</div>
+									<a class="more" href="#/web">
+										Awareness: View more <i class="m-icon-swapright m-icon-white"></i>
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+								<div class="dashboard-stat green-sharp">
+									<div class="visual">
+										<i class="fa fa-bar-chart-o"></i>
+									</div>
+									<div class="details">
+
+										<div class="desc uppercase ng-binding">
+											# of Opps. Created This Quarter
+										</div>
+
+										<div id="QVN02" class="number qvobject kpiData">1,917</div>
+										<div class="number qvobject kpiData subkpi">
+											LY <span id="QVN022" class="number qvobject kpiData subkpi">1,556</span>
+											(<span id="QVN021" class="number qvobject kpiData subkpi">▲ 23.2%</span>)
+										</div>
+									</div>
+
+									<a class="more" href="#/pipeline">
+										Pipeline: View more <i class="m-icon-swapright m-icon-white"></i>
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+								<div class="dashboard-stat yellow-crusta">
+									<div class="visual">
+										<i class="fa fa-shopping-cart"></i>
+									</div>
+									<div class="details">
+
+										<div class="desc uppercase ng-binding">
+											Net New Logos This Quarter
+										</div>
+
+										<div id="QVN03" class="number qvobject kpiData">577</div>
+										<div class="number qvobject kpiData subkpi">
+											LY <span id="QVN032" class="number qvobject kpiData subkpi">633</span>
+											(<span id="QVN031" class="number qvobject kpiData subkpi">▼ 8.8%</span>)
+										</div>
+									</div>
+									<a class="more" href="">
+										Engagement: View more <i class="m-icon-swapright m-icon-white"></i>
+									</a>
+								</div>
+							</div>
+
+						</div>
+						<!-- END DASHBOARD STATS -->
+						<div class="row">
+							<div class="col-md-4 col-sm-4">
+								<!-- BEGIN PORTLET-->
+								<div class="portlet light bg-inverse ">
+									<div class="portlet-title">
+										<div class="caption uppercase font-red-haze">
+											Visits by
+										</div>
+									</div>
+
+									<div class="portlet-body">
+										<div id="QV01" class="qvobject sp-image qvmainchart-xl">
+											
+										</div>
+									</div>
+
+								</div>
+								<!-- END PORTLET-->
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<!-- BEGIN PORTLET-->
+								<div class="portlet light bg-inverse ">
+									<div class="portlet-title">
+										<div class="caption">
+
+											<span class="caption-subject font-green-sharp uppercase">Opp. Value
+												(000)</span>
+										</div>
+										<div class="actions">
+											<div class="btn-group btn-group-devided">
+
+
+												<a class="btn btn-sm btn-icon-only btn-default fullscreen"
+													href="javascript:;" data-original-title="" title="full screen"></a>
+
+											</div>
+										</div>
+
+									</div>
+									<div class="portlet-body">
+
+										<div id="QV02" class="qvobject sp-image qvmainchart-xl">
+											
+										</div>
+
+
+
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<!-- BEGIN REGIONAL STATS PORTLET-->
+								<div class="portlet light bg-inverse ">
+									<div class="portlet-title">
+										<div class="caption">
+
+											<span class="caption-subject font-yellow-crusta uppercase">Net New
+												logos</span>
+										</div>
+										<div class="actions">
+											<a class="btn btn-sm btn-icon-only btn-default fullscreen"
+												href="javascript:;"></a>
+
+										</div>
+									</div>
+									<div class="portlet-body">
+										<div id="QV03" class="qvobject sp-image qvmainchart-xl">
+											
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+					<div class="modal fade ng-scope" id="basic" tabindex="-1" role="basic" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"
+										aria-hidden="true"></button>
+									<h4 class="modal-title">Help text</h4>
+								</div>
+								<div class="modal-body">
+									<p>Help text will be available in version 2 of this demo app</p>
+									<p>
+										help content
+									</p>
+
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn dark btn-outline"
+										data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- END CONTENT -->
+		</div>
+	</div>
+	<!-- END CONTAINER -->
+
+	<!-- BEGIN FOOTER -->
+	<div class="page-footer">
+		<div class="page-footer-inner">
+
+		</div>
+		<div class="scroll-to-top">
+			<i class="simpleicon icon-arrow-up"></i>
+		</div>
+	</div>
+	<!-- END FOOTER -->
+
+
+</body>
+<!-- END BODY -->
+
+</html>

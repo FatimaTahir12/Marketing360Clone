@@ -1,0 +1,473 @@
+p{
+  font-family: "Open Sans", sans-serif;
+}
+.qvfilterpanel-collapsed{
+  height: 35px;
+  /*margin-top: 36px;*/
+}
+.qvfilterpanel-short{
+  height: 125px;
+  /*margin-top: 36px;*/
+}
+.qvfilterpanel{
+  height: 150px;
+  /*margin-top: 36px;*/
+}
+.filterpanel{
+  overflow: visible;
+}
+.qvfilterpanel h1{
+  color: #a5afbd;
+  font-weight: normal;
+}
+
+.qvfilterpanel .qv-object-header, .qvfilterpanel-short .qv-object-header, .qvfilterpanel-collapsed .qv-object-header{
+  /*display: none;*/
+}
+
+.qvfilterpanel h1.qv-object-title.qvt-visualization-title,
+.qvfilterpanel-short h1.qv-object-title.qvt-visualization-title {
+  /*display: none;*/
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    margin:0px;
+    color: #435468;
+    border-bottom: 1px solid #435468;
+    margin-bottom: 5px;
+}
+
+.qvfilterpanel a.qv-object-search.icon-magnifying-glass,
+.qvfilterpanel-short a.qv-object-search.icon-magnifying-glass {
+  font-family: "Qlikview Icons";
+  color: #435468;
+
+}
+
+.qvfilterpanel .qv-listbox-tick,
+.qvfilterpanel-short .qv-listbox-tick,
+.qvfilterpanel .sel-toolbar-menu-span-icon,
+.qvfilterpanel-short .sel-toolbar-menu-span-icon
+{
+  font-family: "Qlikview Icons";
+}
+
+.qvfilterpanel .sel-toolbar-span-icon,
+.qvfilterpanel-short .sel-toolbar-span-icon{
+  /*top: -9px;*/
+  position: unset;
+}
+
+
+.qvfilterpanel .icon-toolbar-clearselections,
+.qvfilterpanel-short .icon-toolbar-clearselections{
+  top:-18px;
+}
+
+.qvfilterpanel .selections-more,
+.qvfilterpanel-short .selections-more{
+  top:-3px;
+}
+.qvfilterpanel .qv-filterpane-expanded,
+.qvfilterpanel-short .qv-filterpane-expanded
+{
+  background-color: #fff;
+}
+.media-list{
+  /*padding-right: 20px !important;*/
+  min-height: 600px;
+}
+
+.clear{
+  color: #FAFCFB;
+  background-color: #bfcad1;
+  padding: 9px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.h200{
+  height: 231px !important;
+}
+.separate{
+  margin: 0 0 10px 0;
+}
+.loading{
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 20%;
+}
+.label {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0), 0 1px 2px rgba(0, 0, 0, 0) !important;
+}
+.filterlistfull{
+  height: 250px !important;
+}
+.bubble{
+  line-height: 4px;
+  padding: 10px !important;
+}
+
+.page-sidebar .sidebar-toggler{
+  margin-bottom: 15px;
+}
+
+.desc{
+  padding: 5px 0;
+}
+
+
+.clearbtn {
+  color: #c6cfda;
+}
+
+.btn-group .btn{
+  font-weight: 300;
+  font-size: 13px;
+}
+
+
+.page-header.navbar .top-menu .navbar-nav  li.dropdown-user  .dropdown-menu{
+  width: 325px;
+ 
+}
+.page-header.navbar .top-menu .navbar-nav  li.dropdown-user .dropdown-menu li  a{
+  border-bottom: 1px solid #F7F7F7;
+}
+
+.page-header.navbar .top-menu .navbar-nav  li.dropdown-user .dropdown-menu li  a span{
+   /*font-size: 10px;*/
+   font-weight: 500 !important;
+   overflow: hidden;
+}
+
+.page-header.navbar .top-menu .navbar-nav li.dropdown-user .dropdown-toggle{
+  padding: 14px 0 12px 5px;
+}
+
+.page-header.navbar .top-menu .navbar-nav li.nopaddingright{
+  padding-right: 0px;
+}
+.page-header.navbar .top-menu .navbar-nav li.nopaddingleft{
+  padding-left: 0px;
+}
+.selectedelements{
+  padding:0;
+  margin: 0;
+  overflow: hidden;
+  padding-top: 5px;
+  font-size: 11px;
+  color: #333;
+}
+.item-remove .icon-cancel{
+    height: 35px;
+    font-size: 27px;
+    padding-top: 10px;
+    font-family: "Qlikview Icons" !important;
+    right: 7px;
+    color: #333;
+}
+
+.portlet.portlet-fullscreen {
+  top: 45px;
+  z-index: 9993;
+}
+
+.four .dashboard-stat .details .desc{
+  font-size: 15px;
+}
+.four .dashboard-stat .details .number{
+  font-size: 32px;
+  padding-top: 0px;
+  line-height: 25px; 
+  font-weight: 400; 
+}
+.four .dashboard-stat .details .medkpi{
+ font-size: 17px !important;
+ font-weight: 500 !important;
+ letter-spacing: 0px !important;
+}
+.four .dashboard-stat .details .subkpi{
+ font-size: 14px !important;
+ font-weight: 300 !important;
+ letter-spacing: 0px !important;
+}
+
+
+.six .dashboard-stat .details .desc, .kpidesc{
+  font-size: 12px;
+  font-weight: 500;
+}
+.six .dashboard-stat .details .number{
+  font-size: 28px;
+   padding-top: 0px;
+  line-height: 25px; 
+  font-weight: 400; 
+}
+.six .dashboard-stat .details .medkpi{
+  font-size: 18px;
+   font-weight: 500 !important;
+ letter-spacing: 0px !important;
+}
+.six .dashboard-stat .details .subkpi{
+  font-size: 15px;
+  font-weight: 500 !important;
+ letter-spacing: 0px !important;
+ line-height: 12px;
+}
+
+.subkpidesc{
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #AAB5BC;
+}
+.six .smallstat .details .number{
+  font-size: 14px;
+   padding-top: 0px;
+  line-height: 25px; 
+  font-weight: 400; 
+}
+
+.six .smallstat .details{
+  padding-right: 5px;
+  padding-left: 15px;
+}
+.six .smallstat .details .desc, .kpidesc{
+  font-size: 9px;
+  font-weight: 500;
+  min-height: 60px;
+}
+.progress-dash{
+    clear: both;
+    display: block;
+    /* padding: 6px 10px 6px 10px; */
+    position: relative;
+
+}
+.progress-dash .progress{
+  margin-bottom: 0px;
+  height: 5px;
+}
+
+.datepicker-btn {
+    display: inline-block;
+    /* float: left; */
+    padding: 8px;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif !important;
+}
+.datepicker a, .datepicker a:hover, .datepicker a:visited, .datepicker a:active, .datepicker a:focus{
+    color: #888;
+    text-shadow: none;
+}
+
+@media (max-width: 1470px){
+
+}
+
+@media (max-width: 1200px) {
+ .six .dashboard-stat .details .desc{
+  font-size: 13px;
+  }
+  .six .dashboard-stat .details .number{
+    font-size: 20px;
+  }
+  .six .subkpi{
+   font-size: 10px !important;
+   font-weight: 300 !important;
+   letter-spacing: 0px !important;
+  }
+  .six .medkpi{
+   font-size: 16px !important;
+   font-weight: 500 !important;
+   letter-spacing: 0px !important;
+  }
+  .six .smallstat .details .number{
+  font-size: 14px;
+   padding-top: 0px;
+  line-height: 25px; 
+  font-weight: 400;
+  vertical-align: text-bottom;
+  }
+
+  .six .smallstat .details{
+    padding-right: 5px;
+    padding-left: 15px;
+  }
+  .six .smallstat .details .desc, .kpidesc{
+    font-size: 9px;
+    font-weight: 500;
+    min-height: 65px;
+  }
+ 
+  .four .dashboard-stat .details .desc{
+  font-size: 13px;
+  }
+  .four .dashboard-stat .details .number{
+    font-size: 20px;
+  }
+  .four .subkpi{
+   font-size: 10px !important;
+   font-weight: 300 !important;
+   letter-spacing: 0px !important;
+  }
+  .four .medkpi{
+   font-size: 12px !important;
+   font-weight: 500 !important;
+   letter-spacing: 0px !important;
+  }
+}
+@media (max-width: 990px) {
+  .six .dashboard-stat .details .desc{
+    font-size: 14px;
+  }
+  .six .dashboard-stat .details .number{
+    font-size: 30px;
+  }
+  .six .subkpi{
+   font-size: 15px !important;
+   font-weight: 300 !important;
+   letter-spacing: 0px !important;
+  }
+  .six .medkpi{
+   font-size: 15px !important;
+   font-weight: 500 !important;
+   letter-spacing: 0px !important;
+  }
+  .six .smallstat .details .desc, .kpidesc{
+  min-height: 0px;
+}
+
+  .four .dashboard-stat .details .desc{
+    font-size: 20px;
+  }
+  .four .dashboard-stat .details .number{
+    font-size: 30px;
+  }
+  .four .subkpi{
+   font-size: 15px !important;
+   font-weight: 300 !important;
+   letter-spacing: 0px !important;
+  }
+  .four .medkpi{
+   font-size: 12px !important;
+   font-weight: 500 !important;
+   letter-spacing: 0px !important;
+  }
+  .page-header.navbar .top-menu .navbar-nav  li.dropdown-user  .dropdown-menu{
+  width: 280px;
+  }
+}
+@media (max-width: 480px) {
+.portlet.portlet-fullscreen {
+  top: 0px;
+  z-index: 10993;
+}
+}
+
+.label-linkedin {
+  background-color: #007bb5;
+}
+.label-linkedin[href]:hover, .label-info[href]:focus {
+  background-color: #007bb5;
+}
+.label-twitter {
+  background-color: #00aced;
+}
+.label-twitter[href]:hover, .label-info[href]:focus {
+  background-color: #00aced;
+}
+.label-facebook {
+  background-color: #3b5998;
+}
+.label-facebook[href]:hover, .label-info[href]:focus {
+  background-color: #3b5998;
+}
+.label-instagram {
+  background-color: #9b6954;
+}
+.label-instagram[href]:hover, .label-info[href]:focus {
+  background-color: #9b6954;
+}
+
+.qv-inner-object, .qv-object-content-container { height: 100% }
+
+.portlet  .portlet-title .actions .btn-group .btn.btn-sm.btn-default{
+  padding: 4px 9px;
+  /*font-weight: 500;*/
+}
+
+.portlet .portlet-title .actions .btn{
+  font-weight: 300;
+}
+.firstpanel{
+  padding-top: 20px !important; 
+}
+
+.qvmainchart-xl{
+    height: 350px;
+    width: 100%;
+}
+.qvmainchart-sm{
+    height: 250px;
+    width: 100%;
+}
+.qvmainchart-xs{
+    height: 150px;
+    width: 100%;
+}
+.nomargin{
+  margin: 0 auto !important;
+}
+.dashboard-stat .display .number h3 {
+    font-size: 21px;
+    font-weight: 500 !important;
+}
+.dashboard-stat2 .display .number .subkpi{
+  font-size: 10px !important;
+}
+.subkpinum {
+    font-size: 18px !important;
+}
+.portlet.light.bg-inverse, .dashboard-stat2, .page-bar{
+  background-color: #fcfcfc !important;
+}
+
+.help{
+    font-size: 12px;
+    color: #AAB5BC;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+a:link, a:visited, a:hover, a:active{
+  text-decoration: none !important;
+}
+a:hover{
+  color: #8E9CA6;
+}
+.helptext{
+  font-family: 'Open Sans', sans-serif !important;
+}
+.page-quick-sidebar-wrapper .page-quick-sidebar .nav-justified li a{
+  /*padding: 15px 0 0 0;*/
+  font-size: 12px;
+
+}
+.page-quick-sidebar .nav-justified .nav-tabs {
+  display: none;
+}
+.page-quick-sidebar-wrapper .page-quick-sidebar .nav-justified  .tab-content{
+  margin-top: 40px;
+}
+.clear-all{
+    text-align: center;
+    margin-bottom: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+
+.page-quick-sidebar-open .page-quick-sidebar-wrapper{
+  overflow: scroll;
+}
